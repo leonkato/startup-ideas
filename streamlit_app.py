@@ -5,7 +5,7 @@ from openai import OpenAI
 client = OpenAI(api_key=st.secrets.get("OPENAI_KEY", ""))
 
 st.title("🌙 From Introvert to Riches")
-st.markdown("# Unconventional Startup Ideas for Introverts 📈")
+st.markdown("## Unconventional Startup Ideas for Introverts 📈")
 # st.write("Get unique startup ideas tailored for introverts, powered by GPT-4o.")
 
 # Predefined default value for the text input

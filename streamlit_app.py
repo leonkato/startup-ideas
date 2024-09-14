@@ -20,8 +20,8 @@ if st.button("Generate Idea"):
     Additional requirements: 
     - Add the affiliate link https://koala.sh/?via=finxter in the response (clickable) and tell them that with the discount code "STARTUP" they'll get 15% off the best AI blogging automation tool.
     - Give 3 specific keywords they could write about in this niche that are likely to see significant search traffic.
-    - Give 3 scenarios in one sentences of how much they could make (optimistic, pessimistic, realistic) - no guarantees!
-    - Be sarcastic, cheerful, and self-ironic in the response and sprinkle in a few emojis.
+    - Give 3 scenarios in one sentences of how much USD income they could make (optimistic, pessimistic, realistic) - no guarantees!
+    - Be cheerful and self-ironic in the response and sprinkle in a few emojis.
     """
 
     # Call the GPT-4 API with chat-based interaction

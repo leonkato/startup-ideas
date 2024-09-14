@@ -2,12 +2,12 @@ import streamlit as st
 from openai import OpenAI
 
 # Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-#GithubIcon {
+main_menu_hidden = """
+#MainMenu {
   visibility: hidden;
 }
 """
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+st.markdown(main_menu_hidden, unsafe_allow_html=True)
 
 # Initialize OpenAI API key
 client = OpenAI(api_key=st.secrets.get("OPENAI_KEY", ""))

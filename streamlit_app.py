@@ -3,9 +3,11 @@ from openai import OpenAI
 
 # Add custom CSS to hide the GitHub icon
 main_menu_hidden = """
-header {
-  visibility: hidden;
-}
+    <style>
+    #st-emotion-cache-1p1m4ay e3g6aar0 { 
+        display: none;
+    }
+    </style>
 """
 st.markdown(main_menu_hidden, unsafe_allow_html=True)
 

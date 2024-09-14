@@ -3,7 +3,7 @@ from openai import OpenAI
 
 # Add custom CSS to hide the GitHub icon
 main_menu_hidden = """
-#MainMenu {
+#st-emotion-cache-1p1m4ay {
   visibility: hidden;
 }
 """

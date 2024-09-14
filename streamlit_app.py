@@ -7,14 +7,21 @@ client = OpenAI(api_key=st.secrets.get("OPENAI_KEY", ""))
 st.title("Unconventional Startup Ideas for Introverts")
 st.write("Get unique startup ideas tailored for introverts, powered by GPT-4o.")
 
+# Predefined default value for the text input
+default_input = "tech gadgets, wellness, remote work"
+
 # User input for additional context
-user_input = st.text_input("Give your three best interests:").replace("<", "").replace(">", "")
+user_input = st.text_input("Give your three best interests:", value=default_input).replace("<", "").replace(">", "")
 
 if st.button("Generate Idea"):
     # Creating the prompt based on user input
     prompt = f"""Generate a highly unconventional and oddly specific startup idea in 2-3 sentences based on blogging that is suitable for an introvert with the following interests: {user_input}
 
-    Additional requirement: Add the affiliate link https://koala.sh/?via=finxter in the response (clickable) and tell them that with the discount code "STARTUP" they'll get 15% off the best AI blogging automation tool.  
+    Additional requirements: 
+    - Add the affiliate link https://koala.sh/?via=finxter in the response (clickable) and tell them that with the discount code "STARTUP" they'll get 15% off the best AI blogging automation tool.
+    - Give 3 specific keywords they could write about in this niche that are likely to see significant search traffic.
+    - Give 3 scenarios in one sentences of how much they could make (optimistic, pessimistic, realistic) - no guarantees!
+    - Be cheerful and self-ironic in the response and sprinkle in a few emojis.
     """
 
     # Call the GPT-4 API with chat-based interaction

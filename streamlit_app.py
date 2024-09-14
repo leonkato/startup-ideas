@@ -11,7 +11,7 @@ st.title("🌙 From Introvert to Riches: Unconventional Startup Ideas for Introv
 default_input = "tech gadgets, wellness, remote work"
 
 # User input for additional context
-user_input = st.text_input("Give your three best interests:", value=default_input).replace("<", "").replace(">", "")
+user_input = st.text_input("What are your three top interests? (Don't think, just write)", value=default_input).replace("<", "").replace(">", "")
 
 if st.button("Generate Idea"):
     # Creating the prompt based on user input

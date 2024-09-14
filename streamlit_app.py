@@ -15,7 +15,7 @@ if st.button("Generate Idea"):
     prompt = f"Generate an unconventional startup idea suitable for an introvert with the following interests: {user_input}"
 
     # Call the GPT-4 API with chat-based interaction
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a creative startup idea generator specialized in generating unconventional ideas for introverts."},

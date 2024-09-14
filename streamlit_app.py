@@ -12,7 +12,7 @@ user_input = st.text_input("Give your three best interests:").replace("<", "").r
 
 if st.button("Generate Idea"):
     # Creating the prompt based on user input
-    prompt = f"""Generate an unconventional startup idea in 2-3 sentences based on blogging that is suitable for an introvert with the following interests: {user_input}
+    prompt = f"""Generate a highly unconventional and oddly specific startup idea in 2-3 sentences based on blogging that is suitable for an introvert with the following interests: {user_input}
 
     Additional requirement: Add the affiliate link https://koala.sh/?via=finxter in the response (clickable) and tell them that with the discount code "STARTUP" they'll get 15% off the best AI blogging automation tool.  
     """
